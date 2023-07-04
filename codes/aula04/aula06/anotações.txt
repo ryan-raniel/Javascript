@@ -1,0 +1,14 @@
+> var n1 = 1445.5
+undefined
+> n1.toFixed(2)
+'1445.50'
+> n1toFixed(2).replace('.', ',')
+Uncaught ReferenceError: n1toFixed is not defined
+> n1.toFixed(2).replace('.', ',')
+'1445,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+'R$ 1.445,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+'US$ 1.445,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+'€ 1.445,50'
